@@ -1,0 +1,36 @@
+{
+  "name": "ios-cicd-demo",
+  "version": "0.1.0",
+  "author": "Leon Carlo Valencia <techie@lynx.rocks>",
+  "license": "See LICENSE file",
+  "bin": {
+    "ios-cicd-demo": "bin/ios-cicd-demo.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.109.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7",
+    "yaml2json": "^1.0.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "1.109.0",
+    "@aws-cdk/aws-codebuild": "1.109.0",
+    "@aws-cdk/aws-codecommit": "1.109.0",
+    "@aws-cdk/aws-codepipeline": "1.109.0",
+    "@aws-cdk/aws-codepipeline-actions": "1.109.0",
+    "@aws-cdk/aws-ecr": "1.109.0",
+    "@aws-cdk/aws-iam": "1.109.0",
+    "@aws-cdk/aws-lambda-python": "1.109.0",
+    "@aws-cdk/aws-s3": "1.109.0",
+    "@aws-cdk/aws-s3-assets": "1.109.0",
+    "@aws-cdk/core": "1.109.0",
+    "@aws-cdk/pipelines": "1.109.0",
+    "source-map-support": "^0.5.16"
+  }
+}

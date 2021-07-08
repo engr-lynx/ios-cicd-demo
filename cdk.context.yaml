@@ -1,0 +1,31 @@
+archi:
+  id: IosCicdDemoPipeline
+  pipeline:
+    repo:
+      type: CodeCommit
+      name: ios-cicd-demo
+      create: true
+    build:
+      compute: Small
+    validate:
+      compute: Small
+      emails:
+      - techie@lynx.rocks
+mobile:
+  ios:
+    pipeline:
+      repo:
+        type: GitHub
+        name: ios-sample
+        tokenName: github-token
+        owner: engr-lynx
+      build:
+        compute: Small
+      staging: true
+      test:
+        compute: Small
+        specFilename: testspec.yml
+      validate:
+        emails:
+        - techie@lynx.rocks
+      deploy: true
